@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Loan Department">
+<suite name="Loan Department" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="TestNG.Listeners"/>
+    </listeners>
     <parameter name="url" value="www.LoanDepartment.com"/>
     <test verbose="2" preserve-order="true" name="Personal">
         <parameter name="URL" value="www.PersonalLoanl.com"/>

@@ -1,5 +1,6 @@
 package TestNG.Test1;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -14,6 +15,7 @@ public class Demo4 {
     public void MobileLoginHome(){
         //will add code
         System.out.println("Home Mobile Login");
+       Assert.assertTrue(false);
     }
     @Test(groups = {"Smoke"})
     public void LoginAPIHome(){
